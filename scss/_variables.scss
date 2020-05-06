@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+//general
+$main-font: 'Lato', sans-serif;
+$big-text: 3.5vw;
+
+//colors
+$white: #fff;
+$blue: #244F75;
+$light-blue: #60BFBF;
+$purple: #8C4B7E;
+$yellow: #F8BB44;
+$red: #F24B4B;
+$colors: $blue, $light-blue, $purple, $yellow, $red; 
+
+//animations
+$translate0: translate3d(0, 0, 0);
+$translate1: translate3d(-100%, 0, 0);
+$translate2: translate3d(0, 100%, 0);
+$translate3: translate3d(0, -100%, 0);
+$translate4: translate3d(100%, 0, 0);
+
+$translates: $translate0,$translate1,$translate2,$translate3,$translate4;
+$animations: animation1,animation2,animation3,animation4,animation5;

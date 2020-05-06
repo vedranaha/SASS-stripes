@@ -1,0 +1,36 @@
+@mixin backgroundColor($start, $colors) {
+    @for $i from $start through length($colors) {
+        #stripe#{$i} {
+            background-color: nth($colors, $i);
+        }
+    }
+}
+@mixin stripeMargin($start, $end) {
+    @for $i from $start through $end {
+        #stripe#{$i} {
+            margin-left: 3px;
+        }
+    }
+}
+@mixin stripeAnimation( $start, $translates, $animations) {
+    @for $i from $start through length($translates) {
+        #stripe#{$i} {
+            animation: nth($animations, $i) ease-in-out 0.8s;
+            //@include animationKeyframe($animation-name: nth($animations, $i), $translate: nth($translates, $i));
+        }
+    }
+}
+
+@mixin skew-default() {
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-transform: skew(30deg) scaleY(1) translate(0, 0);
+    transform: skew(30deg) scaleY(1) translate(0, 0);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@mixin skew-hover() {
+    -webkit-transform: skew(0deg) scale(3) translate(0, 0);
+    transform: skew(0deg) scale(3) translate(0, 0);
+    opacity: 0.1;
+}

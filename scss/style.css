@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+@-webkit-keyframes animation1 {
+  0% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes animation1 {
+  0% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes animation2 {
+  0% {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes animation2 {
+  0% {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes animation3 {
+  0% {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes animation3 {
+  0% {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes animation4 {
+  0% {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes animation4 {
+  0% {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes animation5 {
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes animation5 {
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 3.5vw;
+  color: #fff;
+  overflow: hidden;
+}
+
+.stripes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 8px 0;
+}
+
+.stripes .stripe {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 19%;
+          flex: 1 0 19%;
+  margin: 0;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.stripes .stripe-content:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  opacity: 0.05;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transform: skew(30deg) scaleY(1) translate(0, 0);
+  transform: skew(30deg) scaleY(1) translate(0, 0);
+  -webkit-transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.stripes .stripe-content:hover:before {
+  -webkit-transform: skew(0deg) scale(3) translate(0, 0);
+  transform: skew(0deg) scale(3) translate(0, 0);
+  opacity: 0.1;
+}
+
+.stripes #stripe1 {
+  -webkit-animation: animation1 ease-in-out 0.8s;
+          animation: animation1 ease-in-out 0.8s;
+}
+
+.stripes #stripe2 {
+  -webkit-animation: animation2 ease-in-out 0.8s;
+          animation: animation2 ease-in-out 0.8s;
+}
+
+.stripes #stripe3 {
+  -webkit-animation: animation3 ease-in-out 0.8s;
+          animation: animation3 ease-in-out 0.8s;
+}
+
+.stripes #stripe4 {
+  -webkit-animation: animation4 ease-in-out 0.8s;
+          animation: animation4 ease-in-out 0.8s;
+}
+
+.stripes #stripe5 {
+  -webkit-animation: animation5 ease-in-out 0.8s;
+          animation: animation5 ease-in-out 0.8s;
+}
+
+.stripes #stripe1 {
+  background-color: #244F75;
+}
+
+.stripes #stripe2 {
+  background-color: #60BFBF;
+}
+
+.stripes #stripe3 {
+  background-color: #8C4B7E;
+}
+
+.stripes #stripe4 {
+  background-color: #F8BB44;
+}
+
+.stripes #stripe5 {
+  background-color: #F24B4B;
+}
+
+.stripes #stripe2 {
+  margin-left: 3px;
+}
+
+.stripes #stripe3 {
+  margin-left: 3px;
+}
+
+.stripes #stripe4 {
+  margin-left: 3px;
+}
+
+.stripes #stripe5 {
+  margin-left: 3px;
+}
+/*# sourceMappingURL=style.css.map */

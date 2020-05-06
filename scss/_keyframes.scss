@@ -1,0 +1,56 @@
+//KEYFRAMES FOR ANIMATIONS 
+
+@keyframes animation1 {
+    0% {
+        -webkit-transform: $translate1;
+        $transform: $translate1;
+    }
+    100% {
+        -webkit-transform: $translate0;
+        $transform: $translate0;
+    }
+}
+
+@keyframes animation2 {
+    0% {
+        -webkit-transform: $translate2;
+        transform: $translate2;
+    }
+    100% {
+        -webkit-transform: $translate0;
+        transform: $translate0;
+    }
+}
+
+@keyframes animation3 {
+    0% {
+        -webkit-transform: $translate3;
+        transform: $translate3;
+    }
+    100% {
+        -webkit-transform: $translate0;
+        transform: $translate0;
+    }
+}
+
+@keyframes animation4 {
+    0% {
+        -webkit-transform: $translate2;
+        transform: $translate2;
+    }
+    100% {
+        -webkit-transform: $translate0;
+        transform: $translate0;
+    }
+}
+
+@keyframes animation5 {
+    0% {
+        -webkit-transform: $translate4;
+        transform: $translate4;
+    }
+    100% {
+        -webkit-transform: $translate0;
+        transform: $translate0;
+    }
+}

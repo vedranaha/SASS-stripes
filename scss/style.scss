@@ -1,0 +1,54 @@
+@import "variables";
+@import "mixins";
+@import "keyframes";
+
+html {
+    height: 100vh;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: $main-font;
+    font-size: $big-text;
+    color: $white;
+    overflow: hidden;
+}
+
+.stripes {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 8px 0;
+    .stripe {
+        flex: 1 0 19%;  //flex-grow | flex-shrink | flex-basis(width/height)
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+    }
+    .stripe-content {
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: $white;
+            opacity: 0.05;
+            @include skew-default();
+        }
+        &:hover:before {
+            @include skew-hover();
+        }
+    }
+@include stripeAnimation( $start: 1, $translates: $translates, $animations: $animations);    
+@include backgroundColor($start: 1, $colors: $colors);
+@include stripeMargin($start: 2, $end:5);
+}
